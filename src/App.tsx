@@ -48,12 +48,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        {ranking ? <div><p>Nearnaut {'#' + hash} is of rank...</p><h1>{ranking}</h1></div> : <h1>Enter the Nearnaut id # to get its ranking...</h1>}
+      <header className="App-header" style={{ backgroundImage: `url(./bg.png)`, backgroundColor: '#000000', backgroundSize: 'cover', boxShadow: `inset 0 0 0 2000px rgba(0, 0, 0, 0.6)` }}>
+        {ranking ? <div><p>Nearnaut <b>{'#' + hash}</b> is of rank...</p><h1>{ranking}</h1></div> : <h1>Enter the Nearnaut id # to get its ranking...</h1>}
         <input onChange={updateHash} value={inputText} style={{ width: '50%', height: '50px', fontSize: '1em' }} />
         <button style={{ marginTop: '50px', width: '25%' }} className='button' onClick={() => updateRanking()}><b>Check</b></button>
       </header>
-    </div>
+    </div >
   );
 }
 
