@@ -1,13 +1,56 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.button {
+  max-width: 350px;
+  padding: 16px 20px;
+  border: 1px solid var(--lavendar);
+  border-radius: var(--radius-default);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 100ms ease 0s;
+  box-sizing: border-box;
+  border-color: var(--lavendar);
+  background-color: var(--lavendar);
+  color: var(--plum);
+}
+
+:root {
+  --purple: #250055;
+  --plum-base: 22, 5, 84;
+  --plum: rgb(var(--plum-base));
+  --plum-light: #230887;
+  --periwinkle-base: 130, 135, 255;
+  --periwinkle: rgb(var(--periwinkle-base));
+  --lavendar-base: 248, 221, 255;
+  --lavendar: #d9d8f5;
+  --pink: #7979ff;
+  --background: #07061c;
+  --background-dark: #1f043c;
+  --bubble-gum-base: 255, 121, 237;
+  --bubble-gum: rgb(var(--bubble-gum-base));
+  --success: #110a68;
+  --error-base: 255, 95, 95;
+  --error: rgb(var(--error-base));
+  --success-bg: #1f1c45;
+  --error-bg: rgba(255, 0, 31, 0.1);
+  --shadow-primary: 0 0 14px #4a4c99;
+  --shadow-secondary: 0 0 14px rgba(186, 13, 215, 0.6);
+  --radius-default: 8px;
+  --font-primary: "Futura Md BT", sans-serif;
+  --font-secondary: "Futura Md BT", sans-serif;
 }
